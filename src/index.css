@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    
+    /* Hararghe brand palette: Deep forest green, rich amber/gold, warm neutral paper */
+    --color-forest: #143521;
+    --color-forest-dark: #0b1f13;
+    --color-leaf: #256338;
+    --color-gold: #c2953e;
+    --color-paper: #f9f8f5;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #fcfbf9;
+    color: #1a221b;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-numbers {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfc6b5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a89c85;
+}
